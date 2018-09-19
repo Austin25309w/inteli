@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="on_off" customModuleProvider="target">
+                    <items>
+                        <label width="135" height="26" alignment="left" text="Light Switch" textAlignment="center" id="jHq-5B-qOO"/>
+                        <button width="1" alignment="left" title="On" id="j0P-Ms-nsF">
+                            <connections>
+                                <action selector="onSwitch" destination="AgC-eL-Hgc" id="WqX-W6-Fz9"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Off" id="RfN-QM-WfD">
+                            <connections>
+                                <action selector="offSwitch" destination="AgC-eL-Hgc" id="Qzz-eG-OJo"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" id="iUd-2G-ATl"/>
+                        <group width="1" alignment="left" id="5rg-Rt-OJm">
+                            <items>
+                                <button width="71" alignment="left" title="Button" id="kLE-aA-MOE">
+                                    <connections>
+                                        <action selector="sendMessageToWatch" destination="AgC-eL-Hgc" id="7tG-Fu-30h"/>
+                                    </connections>
+                                </button>
+                                <label alignment="left" text="Label" id="bBK-gG-aJP"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="messageLabel" destination="bBK-gG-aJP" id="Y8Y-t1-3ik"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="on_off" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

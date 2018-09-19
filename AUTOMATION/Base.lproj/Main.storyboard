@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q4Q-9E-i6L">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Museo-300.otf">
+            <string>Museo-300</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Control Panel-->
+        <scene sceneID="xzo-86-Btk">
+            <objects>
+                <viewController id="ODG-yg-Ba8" customClass="HomeVC" customModule="AUTOMATION" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yMP-o4-34X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gZg-0y-AbI">
+                                <rect key="frame" x="10" y="74" width="355" height="583"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="SD6-zX-JXG">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="134.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BVP-bJ-TcE">
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="134.5"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OyK-jQ-UUS">
+                                                <rect key="frame" x="185" y="0.0" width="170" height="134.5"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="adR-G7-3b2">
+                                        <rect key="frame" x="0.0" y="149.5" width="355" height="134.5"/>
+                                        <subviews>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="light" translatesAutoresizingMaskIntoConstraints="NO" id="trq-VR-Me8">
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="134.5"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="LlP-2g-9cK" appends="YES" id="9Vt-z5-2Qe"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="power" translatesAutoresizingMaskIntoConstraints="NO" id="ieq-NS-nVy">
+                                                <rect key="frame" x="185" y="0.0" width="170" height="134.5"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Mgz-bn-oe8" appends="YES" id="eiB-fd-T9d"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0rp-qN-fSu">
+                                        <rect key="frame" x="0.0" y="299" width="355" height="134.5"/>
+                                        <subviews>
+                                            <imageView alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fan" translatesAutoresizingMaskIntoConstraints="NO" id="Xey-ZA-IQS">
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="134.5"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="rEG-9y-Owv" appends="YES" id="3yy-wa-RWw"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="power" translatesAutoresizingMaskIntoConstraints="NO" id="d4p-XL-YqD">
+                                                <rect key="frame" x="185" y="0.0" width="170" height="134.5"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="e88-wv-MSU" appends="YES" id="eG5-1v-ZdG"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Y6q-1f-hUR">
+                                        <rect key="frame" x="0.0" y="448.5" width="355" height="134.5"/>
+                                        <subviews>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garage" translatesAutoresizingMaskIntoConstraints="NO" id="OaE-Hr-nHo">
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="134.5"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="wg3-nz-MFO" appends="YES" id="Bae-Qd-kiT"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temp" translatesAutoresizingMaskIntoConstraints="NO" id="mmW-ju-SYf">
+                                                <rect key="frame" x="185" y="0.0" width="170" height="134.5"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="OqG-7x-s0d" appends="YES" id="A51-UV-ioe"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gcL-9H-NS9" firstAttribute="trailing" secondItem="gZg-0y-AbI" secondAttribute="trailing" constant="10" id="06L-bo-pfn"/>
+                            <constraint firstItem="gZg-0y-AbI" firstAttribute="leading" secondItem="gcL-9H-NS9" secondAttribute="leading" constant="10" id="2wf-wj-6Ts"/>
+                            <constraint firstItem="gcL-9H-NS9" firstAttribute="bottom" secondItem="gZg-0y-AbI" secondAttribute="bottom" constant="10" id="eZI-sR-bAi"/>
+                            <constraint firstItem="gZg-0y-AbI" firstAttribute="top" secondItem="gcL-9H-NS9" secondAttribute="top" constant="10" id="qT8-EJ-Ibl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gcL-9H-NS9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Control Panel" id="RBM-e7-OYq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugQ-Ci-FJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LlP-2g-9cK" userLabel="light_tap">
+                    <connections>
+                        <action selector="lightSwitch:" destination="ODG-yg-Ba8" id="3hK-8L-5rJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Mgz-bn-oe8" userLabel="power_tap">
+                    <connections>
+                        <action selector="powerSwitch:" destination="ODG-yg-Ba8" id="fMu-qK-DSv"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="rEG-9y-Owv" userLabel="fan_tap">
+                    <connections>
+                        <action selector="fanSwtich:" destination="ODG-yg-Ba8" id="4O4-MZ-3Vk"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="e88-wv-MSU" userLabel="power2_tap">
+                    <connections>
+                        <action selector="power2Switch:" destination="ODG-yg-Ba8" id="3JL-gm-y3Y"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="wg3-nz-MFO" userLabel="garage">
+                    <connections>
+                        <segue destination="aeJ-pY-LSk" kind="presentation" id="sXF-xH-XI2"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="OqG-7x-s0d" userLabel="temp">
+                    <connections>
+                        <action selector="tempButton:" destination="ODG-yg-Ba8" id="oYn-C9-sBX"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="805.60000000000002" y="-455.62218890554726"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vFo-g7-3VL">
+            <objects>
+                <viewController id="c65-Nu-RKl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aCf-15-IMb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oya-me-yCQ">
+                                <rect key="frame" x="136" y="247" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UHy-Rs-xff"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKa-4w-iUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1456" y="-758"/>
+        </scene>
+        <!--FrontVC-->
+        <scene sceneID="ylF-nK-0lz">
+            <objects>
+                <viewController id="q4Q-9E-i6L" customClass="FrontVC" customModule="AUTOMATION" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="59R-Sk-ADe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qo7-uM-B0G">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Intelli" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YX4-7o-DPR">
+                                <rect key="frame" x="39" y="133" width="297" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Museo-300" family="Museo" pointSize="45"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBk-cc-5Iy">
+                                <rect key="frame" x="0.0" y="519" width="375" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Museo-300" family="Museo" pointSize="25"/>
+                                <state key="normal" title="My Home Automation"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Gvs-TA-SdE" kind="presentation" id="uRb-4C-Xsf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="JD2-sj-EP9"/>
+                    </view>
+                    <connections>
+                        <outlet property="videoVideo" destination="Qo7-uM-B0G" id="8wi-Wn-9sH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PnT-v7-U9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-871.20000000000005" y="-456.52173913043481"/>
+        </scene>
+        <!--Garage Open-->
+        <scene sceneID="TO2-hS-3Y6">
+            <objects>
+                <viewController id="7m5-wo-p1j" customClass="GarageOpen" customModule="AUTOMATION" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b1J-ta-DYX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="garage" translatesAutoresizingMaskIntoConstraints="NO" id="lLI-HX-lC3">
+                                <rect key="frame" x="31" y="174" width="292" height="319"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Garage will be open if I am within 1 block away of my house" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofo-fv-ifb">
+                                <rect key="frame" x="31" y="431" width="307" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Museo-300" family="Museo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="gMa-9W-nQQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YjD-M1-BD7">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="jmo-pW-7EL">
+                            <connections>
+                                <action selector="cancelButton:" destination="7m5-wo-p1j" id="kQ4-Lt-Uhr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z5u-4a-HGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3031.1999999999998" y="326.98650674662673"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OGO-S4-qm8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gvs-TA-SdE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Okm-Aw-QbW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ODG-yg-Ba8" kind="relationship" relationship="rootViewController" id="qlI-7F-cq1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g75-Sx-wYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121" y="-456"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uZf-gv-IkR">
+            <objects>
+                <viewController id="C6p-Xx-FDo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8nF-YE-CBA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgi-FL-QHs">
+                                <rect key="frame" x="92" y="105" width="199" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="a44-0B-KdG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PgC-op-1HF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="1069.1154422788607"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="n6w-eV-yU3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aeJ-pY-LSk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yn0-g5-yNo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7m5-wo-p1j" kind="relationship" relationship="rootViewController" id="833-ch-Gbw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vey-rt-9ne" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2092" y="326.98650674662673"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fan" width="856" height="884"/>
+        <image name="garage" width="242" height="240"/>
+        <image name="light" width="120" height="120"/>
+        <image name="power" width="240" height="240"/>
+        <image name="temp" width="240" height="240"/>
+    </resources>
+</document>
